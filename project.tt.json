@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "yiban-order",
+  "description": "易班大厅预约",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
