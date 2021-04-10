@@ -80,6 +80,8 @@ const actions = {
     if (result.statusCode >= 200 && result.statusCode < 300) {
       await Taro.showToast({title: '操作成功', icon: 'success'})
       await Taro.navigateBack()
+      await Taro.startPullDownRefresh()
+      await Taro.stopPullDownRefresh()
       await Promise.resolve()
     } else {
       await Taro.showToast({title: result.data, icon: 'none'})

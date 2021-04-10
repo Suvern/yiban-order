@@ -1,6 +1,6 @@
 import {request} from './http'
 
-const baseUrl = 'https://localhost:3000'
+const baseUrl = 'http://localhost:3000'
 const header = {'content-type': 'application/json'}
 
 /**

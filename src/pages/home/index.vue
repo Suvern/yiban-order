@@ -36,7 +36,6 @@ export default {
     const admin = computed(() => store.getters.user.isAdmin)
     const avatar = computed(() => store.getters.isLogin ? store.getters.user.name.split('').reverse().join('') : '?')
     const actionGuard = async action => {
-      console.log('guard', action)
       if (store.getters.isLogin) {
         await action()
       } else {

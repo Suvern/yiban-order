@@ -14,6 +14,7 @@ import {useStore} from 'vuex'
 import {AtList} from 'taro-ui-vue3'
 import Pagination from '../../components/Pagination';
 import OrderItem from '../../components/OrderItem';
+import store from '../../store';
 
 export default {
   name: 'History',
@@ -35,9 +36,11 @@ export default {
     return {data, onPageChange}
   },
   mounted() {
-    const store = useStore()
     store.dispatch(store.getters.type, 0)
   },
+  onPullDownRefresh() {
+    store.dispatch(store.getters.type, 0)
+  }
 }
 </script>
 

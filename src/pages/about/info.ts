@@ -5,8 +5,8 @@ export const yibanInfo = `
 
 export const peopleInfo = [
   {
-    text: '指导老师: 曹国强',
-    phone: '13626163655'
+    text: '指导老师: 刘刚领',
+    phone: '15062142297'
   },
   {
     text: '现任站长: 管永富',

@@ -89,7 +89,7 @@ export default {
     }
     const startTimeSelector = ['8:00', '10:00', '14:00', '16:00', '19:00']
     const endTimeSelector = ['10:00', '12:00', '16:00', '18:00', '21:00']
-    const valid = computed(() => store.getters.isLogin && form.content && form.unit && (Number(form.people) > 0 && Number(form.people) <= 10) >= 1 && form.date && form.startTime && form.endTime)
+    const valid = computed(() => store.getters.isLogin && form.content && form.unit && (Number(form.people) > 0 && Number(form.people) <= 40) >= 1 && form.date && form.startTime && form.endTime)
     const onSubmit = async () => await store.dispatch('order', form).catch(e => console.error(e))
     return {
       ...toRefs(form),

@@ -43,14 +43,14 @@ export default {
       {title: '审核结果', desc: '审核结果可通过\"我的预约\"查询'}]
     const current = ref(0)
     const stepChange = e => current.value = e
-    const copy = () => {
+    const copy = data => {
       Taro.setClipboardData({
-        data: qqGroup, success: res => {
+        data: data, success: res => {
           if (res.errMsg === 'setClipboardData:ok') {
             Taro.showToast({title: '复制成功', icon: 'none'})
           }
         }
-      })
+      });
     }
     return {
       steps,

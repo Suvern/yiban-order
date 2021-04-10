@@ -6,8 +6,8 @@ export default {
     'pages/profile/index',
     'pages/login/index',
     'pages/history/index',
-    'pages/detail/index',
     'pages/about/index',
+    'pages/detail/index',
   ],
   tabBar: {
     list: [
